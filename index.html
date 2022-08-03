@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <!-- icon link -->
+    <script src="https://kit.fontawesome.com/9635cf3887.js" crossorigin="anonymous"></script>
+    <!--style links-->
+    <link rel="stylesheet" href="./style/styles.css">
+    <link rel="stylesheet" href="./style/normalize.css">
+    <!--scripts-->
+    <script src="./scripts/index.js" defer></script>
+    <title>Calc</title>
+</head>
+<body>
+    <nav>
+        <i class="fa-solid fa-divide"></i>
+        <p>@JoaquinGB</p>
+    </nav>
+    <div class="main">
+        <div class="results">
+            <div class="valuPorcentaje">
+                <label >Valor del Porcentaje</label>
+                <p id="vPShow"></p>
+            </div>
+            <div class="importeOriginal">
+                <label >Importe Original</label>
+                <p id="OShow"></p>
+            </div>
+            <div class="importeMasPorcentaje">
+                <label >Inporte mas %</label>
+                <p id="plusShow"></p>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="selectPorcentaje">
+                <div class="porcenjaeBtns">
+                    <button id="btn5">%5</button>
+                    <button id="btn10">%10</button>
+                    <button id="btn21">%21</button>
+                </div>
+                <div class="otros">
+                    <label >Otro :</label>
+                    <input type="text" id="otrosSelect" name="" placeholder="%"
+                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                </div>
+            </div>
+            <div class="addImprte">
+                <div class="importe">
+                    <label id="">Importe :</label>
+                    <input type="text" id="importeInput" name="" 
+                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                </div>
+                <button id="btnCalc">Calcular</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
