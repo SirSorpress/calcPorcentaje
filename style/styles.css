@@ -36,6 +36,7 @@ nav {
   padding-left: 20px;
   width: 100%;
   height: 35%;
+  overflow-y: scroll;
 }
 .main .results div {
   height: 50px;
@@ -109,7 +110,7 @@ nav {
   justify-content: space-between;
   gap: 20px;
   width: 80%;
-  height: 50%;
+  min-height: 50%;
 }
 .main .panel .addImprte .importe {
   display: flex;
@@ -127,7 +128,7 @@ nav {
 }
 .main .panel .addImprte button {
   width: 100%;
-  height: 30px;
+  min-height: 30px;
   margin-bottom: 60px;
   border: none;
   border-radius: 10px;
