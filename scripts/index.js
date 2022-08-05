@@ -15,8 +15,8 @@ window.onload = function(){
     const plusShow = document.getElementById("plusShow");
 
     function calac(){
-        const porcentajeValue = otrosSelect.value;
-        const importe = importeInput.value;
+        const porcentajeValue = Number(otrosSelect.value);
+        const importe = Number(importeInput.value);
 
         const resultPorcentaje =  (porcentajeValue * importe) /100;
 
@@ -38,7 +38,6 @@ window.onload = function(){
     })
 
     btnCalc.addEventListener("click",function(){
-        console.log(importeInput.value);
         calac();
     })
 
